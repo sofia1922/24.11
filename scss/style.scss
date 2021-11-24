@@ -1,0 +1,27 @@
+@mixin item ($BgCol, $color, $wid, $heig, $Fs){
+    background-color:$BgCol;
+    color: $color;
+    width: $wid;
+    height: $heig;
+    font-size: $Fs;
+}
+.container{
+    background-color:grey;
+    width: 400px;
+    height: 500px;
+    border-radius: 3px;
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-template-rows: repeat(6, auto);
+    align-items: center;
+    justify-content: center;
+    column-gap: 20px;
+    row-gap: 15px;
+}
+.item1{
+    display: grid;
+    @include item(black, blue, 70px, 70px, 20px);
+}
+.item{
+    @include item(lightgrey, black, 70px, 70px, 20px)
+}

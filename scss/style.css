@@ -1,0 +1,40 @@
+.container {
+  background-color: grey;
+  width: 400px;
+  height: 500px;
+  border-radius: 3px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (auto)[4];
+      grid-template-columns: repeat(4, auto);
+  -ms-grid-rows: (auto)[6];
+      grid-template-rows: repeat(6, auto);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-column-gap: 20px;
+          column-gap: 20px;
+  row-gap: 15px;
+}
+
+.item1 {
+  display: -ms-grid;
+  display: grid;
+  background-color: black;
+  color: blue;
+  width: 70px;
+  height: 70px;
+  font-size: 20px;
+}
+
+.item {
+  background-color: lightgrey;
+  color: black;
+  width: 70px;
+  height: 70px;
+  font-size: 20px;
+}
+/*# sourceMappingURL=style.css.map */
